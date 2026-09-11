@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InovaJK</title>
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('inovajk-theme');
+          var theme =
+            stored ||
+            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="icon" href="../images/logo-inovajk.png" type="image/png" />
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container header-inner">
+        <a href="../index.html" class="brand" aria-label="Página inicial da InovaJK">
+          <span class="brand-mark"><img src="../images/logo-inovajk.png" alt="Logotipo InovaJK" /></span>
+          <span class="brand-text">
+            <strong>Inova</strong>
+            <small>JK</small>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Navegação principal">
+          <a href="../index.html">Home</a>
+          <a href="empresa.html">Empresa</a>
+          <a href="cursos.html">Áreas de Atuação</a>
+          <a href="estagiarios.html">Estagiários</a>
+          <a href="escola.html">Escola</a>
+          <a href="roadmap.html">Roadmap</a>
+          <a href="contato_reg.html">Contato</a>
+        </nav>
+
+        <button
+          type="button"
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Alternar para modo escuro"
+          aria-pressed="false"
+        >
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <line x1="12" y1="2" x2="12" y2="4"></line>
+            <line x1="12" y1="20" x2="12" y2="22"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="2" y1="12" x2="4" y2="12"></line>
+            <line x1="20" y1="12" x2="22" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-banner">
+        <div class="container banner-with-logo">
+          <div class="banner-logo">
+            <img src="../images/logo-inovajk.png" alt="Logotipo InovaJK" />
+          </div>
+          <div class="page-intro">
+            <p class="eyebrow">Quem somos</p>
+            <h1>Uma empresa acadêmica dedicada à manutenção e montagem de computadores.</h1>
+            <p>
+              A InovaJK é o projeto de empresa acadêmica da turma 250 do curso Técnico em
+              Informática da Escola Técnica Estadual Juscelino Kubitschek (FAETEC), criado para
+              simular, dentro da escola, o funcionamento de uma empresa real de assistência
+              técnica.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-content">
+        <div class="container content-grid">
+          <article class="story-card">
+            <p class="eyebrow">Nossa história</p>
+            <h3>Da proposta à prática</h3>
+            <p>
+              A InovaJK nasceu como uma proposta apresentada à coordenação do curso Técnico em
+              Informática, com o objetivo de aplicar na prática conteúdos das disciplinas de
+              Redes, Hardware, Administração e Segurança, aproximando os alunos da rotina real
+              de uma assistência técnica.
+            </p>
+            <p>
+              O projeto é organizado em cinco grupos que atuam de forma integrada, seguindo o
+              fluxo de uma Ordem de Serviço: do atendimento ao cliente até a entrega do
+              equipamento, passando por diagnóstico, orçamento, manutenção e verificação de
+              qualidade.
+            </p>
+          </article>
+
+          <aside class="story-card">
+            <p class="eyebrow">Valores</p>
+            <ul class="table-list">
+              <li><strong>Prática:</strong> aplicamos o conteúdo técnico em situações reais de atendimento.</li>
+              <li><strong>Organização:</strong> trabalhamos com processos claros, do recebimento à entrega.</li>
+              <li><strong>Qualidade e segurança:</strong> cada serviço passa por verificação antes de ser entregue.</li>
+              <li><strong>Trabalho em equipe:</strong> cinco grupos, uma só empresa acadêmica.</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">Linha do tempo</p>
+            <h2>Marcos da nossa trajetória</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-card">
+              <p class="eyebrow">2026</p>
+              <h3>Idealização</h3>
+              <p>Proposta da empresa acadêmica apresentada à coordenação e formação dos cinco grupos de trabalho.</p>
+            </article>
+
+            <article class="timeline-card">
+              <p class="eyebrow">2026</p>
+              <h3>Estruturação</h3>
+              <p>Definição do fluxo integrado de atendimento e da organização de cada grupo dentro da InovaJK.</p>
+            </article>
+
+            <article class="timeline-card">
+              <p class="eyebrow">2026</p>
+              <h3>Implantação</h3>
+              <p>Proposta de utilização do Laboratório 4 como espaço físico para o funcionamento da InovaJK.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">Fundadores</p>
+            <h2>Quem idealizou a InovaJK</h2>
+          </div>
+
+          <!--
+            Espaço reservado: para adicionar um novo fundador, duplique o
+            <article class="founder-card"> abaixo e troque nome, cargo e bio.
+          -->
+          <div class="team-grid founders-grid">
+            <article class="founder-card">
+              <span class="team-avatar founder-avatar">PS</span>
+              <h3>Pyetro Silva</h3>
+              <span class="course-meta">Fundador</span>
+              <p>Integrante fundador da InovaJK, envolvido na concepção da proposta e na organização inicial do projeto.</p>
+            </article>
+
+            <article class="founder-card">
+              <span class="team-avatar founder-avatar">CE</span>
+              <h3>Carlos Eduardo</h3>
+              <span class="course-meta">Fundador</span>
+              <p>Integrante fundador da InovaJK, envolvido na concepção da proposta e na organização inicial do projeto.</p>
+            </article>
+
+            <article class="founder-card">
+              <span class="team-avatar founder-avatar">GC</span>
+              <h3>Gabriel Cezar</h3>
+              <span class="course-meta">Fundador</span>
+              <p>Integrante fundador da InovaJK, envolvido na concepção da proposta e na organização inicial do projeto.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">Nossa equipe</p>
+            <h2>Quem faz a InovaJK acontecer</h2>
+            <p style="color: var(--texto-suave); max-width: 640px;">
+              Cada um dos cinco grupos reúne alunos da turma 250 responsáveis por uma etapa do
+              fluxo de atendimento da InovaJK.
+            </p>
+          </div>
+
+          <!--
+            Espaços reservados: substitua "Nome do integrante" pelos nomes reais
+            de cada aluno responsável por esse grupo. Adicione ou remova <li> conforme
+            o número de integrantes de cada equipe.
+          -->
+          <div class="team-grid">
+            <article class="team-group">
+              <span class="course-meta">Grupo 1</span>
+              <h3>Organização e Administração</h3>
+              <ul class="team-members">
+                <li class="team-member">
+                  <span class="team-avatar">NI</span>
+                  <div><strong>Nome do integrante</strong><span>Coordenação administrativa</span></div>
+                </li>
+                <li class="team-member">
+                  <span class="team-avatar">NI</span>
+                  <div><strong>Nome do integrante</strong><span>Registros e documentação</span></div>
+                </li>
+              </ul>
+            </article>
+
+            <article class="team-group">
+              <span class="course-meta">Grupo 2</span>
+              <h3>Suporte Técnico</h3>
+              <ul class="team-members">
+                <li class="team-member">
+                  <span class="team-avatar">NI</span>
+                  <div><strong>Nome do integrante</strong><span>Atendimento ao cliente</span></div>
+                </li>
+                <li class="team-member">
+                  <span class="team-avatar">NI</span>
+                  <div><strong>Nome do integrante</strong><span>Diagnóstico de defeitos</span></div>
+                </li>
+              </ul>
+            </article>
+
+            <article class="team-group">
+              <span class="course-meta">Grupo 3</span>
+              <h3>Manutenção e Montagem</h3>
+              <ul class="team-members">
+                <li class="team-member">
+                  <span class="team-avatar">NI</span>
+                  <div><strong>Nome do integrante</strong><span>Montagem e desmontagem</span></div>
+                </li>
+                <li class="team-member">
+                  <span class="team-avatar">NI</span>
+                  <div><strong>Nome do integrante</strong><span>Testes e reparos</span></div>
+                </li>
+              </ul>
+            </article>
+
+            <article class="team-group">
+              <span class="course-meta">Grupo 4</span>
+              <h3>Infraestrutura e Redes</h3>
+              <ul class="team-members">
+                <li class="team-member">
+                  <span class="team-avatar">NI</span>
+                  <div><strong>Nome do integrante</strong><span>Cabeamento e conectividade</span></div>
+                </li>
+                <li class="team-member">
+                  <span class="team-avatar">NI</span>
+                  <div><strong>Nome do integrante</strong><span>Suporte de rede</span></div>
+                </li>
+              </ul>
+            </article>
+
+            <article class="team-group">
+              <span class="course-meta">Grupo 5</span>
+              <h3>Segurança e Qualidade</h3>
+              <ul class="team-members">
+                <li class="team-member">
+                  <span class="team-avatar">NI</span>
+                  <div><strong>Nome do integrante</strong><span>Verificação de qualidade</span></div>
+                </li>
+                <li class="team-member">
+                  <span class="team-avatar">NI</span>
+                  <div><strong>Nome do integrante</strong><span>Segurança do processo</span></div>
+                </li>
+              </ul>
+            </article>
+          </div>
+          <p class="team-note">* Nomes de exemplo — substitua pelos integrantes reais de cada grupo.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> InovaJK — Escola Técnica Estadual Juscelino Kubitschek (FAETEC). Todos os direitos reservados.</p>
+        <div class="footer-links">
+          <a href="empresa.html">Empresa</a>
+          <a href="cursos.html">Áreas de Atuação</a>
+          <a href="estagiarios.html">Estagiários</a>
+          <a href="escola.html">Escola</a>
+          <a href="roadmap.html">Roadmap</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estagiários | InovaJK</title>
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('inovajk-theme');
+          var theme =
+            stored ||
+            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="icon" href="../images/logo-inovajk.png" type="image/png" />
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container header-inner">
+        <a href="../index.html" class="brand" aria-label="Página inicial da InovaJK">
+          <span class="brand-mark"><img src="../images/logo-inovajk.png" alt="Logotipo InovaJK" /></span>
+          <span class="brand-text">
+            <strong>Inova</strong>
+            <small>JK</small>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Navegação principal">
+          <a href="../index.html">Home</a>
+          <a href="empresa.html">Empresa</a>
+          <a href="cursos.html">Áreas de Atuação</a>
+          <a href="estagiarios.html">Estagiários</a>
+          <a href="escola.html">Escola</a>
+          <a href="roadmap.html">Roadmap</a>
+          <a href="contato_reg.html">Contato</a>
+        </nav>
+
+        <button
+          type="button"
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Alternar para modo escuro"
+          aria-pressed="false"
+        >
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <line x1="12" y1="2" x2="12" y2="4"></line>
+            <line x1="12" y1="20" x2="12" y2="22"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="2" y1="12" x2="4" y2="12"></line>
+            <line x1="20" y1="12" x2="22" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-banner">
+        <div class="container page-intro">
+          <p class="eyebrow">Estagiários</p>
+          <h1>Quem apoia o dia a dia da InovaJK.</h1>
+          <p>
+            Além dos cinco grupos de alunos, a InovaJK conta com o apoio de estagiários do
+            curso Técnico em Informática, que auxiliam os professores responsáveis na
+            supervisão dos grupos durante os tempos livres e no acompanhamento das atividades
+            do laboratório.
+          </p>
+        </div>
+      </section>
+
+      <section class="page-content">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">Estagiários atuais</p>
+            <h2>Quem está na InovaJK agora</h2>
+          </div>
+
+          <!--
+            Espaços reservados: substitua pelos estagiários reais.
+            Duplique o <article class="course-card intern-card"> para adicionar mais perfis.
+          -->
+          <div class="course-grid">
+            <article class="course-card intern-card">
+              <span class="course-meta">Estagiário(a)</span>
+              <div class="team-member" style="margin-top: 4px;">
+                <span class="team-avatar">NE</span>
+                <div><strong>Nome do estagiário</strong><span>Suporte Técnico e Manutenção</span></div>
+              </div>
+              <p class="intern-meta">Técnico em Informática · Fev 2026 – atual</p>
+              <p><strong>Projetos:</strong> Apoio ao atendimento e diagnóstico de equipamentos na InovaJK.</p>
+              <p><strong>Habilidades:</strong> Diagnóstico de hardware, atendimento ao cliente</p>
+              <div class="intern-links">
+                <a href="#">Portfólio</a>
+                <a href="#">Contato</a>
+              </div>
+            </article>
+
+            <article class="course-card intern-card">
+              <span class="course-meta">Estagiário(a)</span>
+              <div class="team-member" style="margin-top: 4px;">
+                <span class="team-avatar">NE</span>
+                <div><strong>Nome do estagiário</strong><span>Infraestrutura e Redes</span></div>
+              </div>
+              <p class="intern-meta">Técnico em Informática · Fev 2026 – atual</p>
+              <p><strong>Projetos:</strong> Apoio à supervisão dos grupos de Infraestrutura e Redes e Segurança e Qualidade.</p>
+              <p><strong>Habilidades:</strong> Redes de computadores, cabeamento estruturado</p>
+              <div class="intern-links">
+                <a href="#">Portfólio</a>
+                <a href="#">Contato</a>
+              </div>
+            </article>
+
+            <article class="course-card intern-card">
+              <span class="course-meta">Estagiário(a)</span>
+              <div class="team-member" style="margin-top: 4px;">
+                <span class="team-avatar">NE</span>
+                <div><strong>Nome do estagiário</strong><span>Organização e Administração</span></div>
+              </div>
+              <p class="intern-meta">Técnico em Informática · Fev 2026 – atual</p>
+              <p><strong>Projetos:</strong> Apoio à organização administrativa e ao registro das Ordens de Serviço.</p>
+              <p><strong>Habilidades:</strong> Organização, atendimento, documentação</p>
+              <div class="intern-links">
+                <a href="#">Portfólio</a>
+                <a href="#">Contato</a>
+              </div>
+            </article>
+          </div>
+          <p class="team-note">* Perfis de exemplo — substitua pelos estagiários reais do curso.</p>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">Estagiários anteriores</p>
+            <h2>Histórico e vitrine profissional</h2>
+            <p style="color: var(--texto-suave); max-width: 640px;">
+              Esta seção reúne a trajetória de quem já passou pela InovaJK — uma forma de dar
+              visibilidade profissional aos alunos, mostrando experiência, projetos e
+              habilidades para empresas interessadas em conhecer seu trabalho.
+            </p>
+          </div>
+
+          <!--
+            Espaço reservado: adicione aqui os estagiários que já concluíram o período na InovaJK.
+            Duplique o <article class="course-card intern-card"> conforme necessário.
+          -->
+          <div class="course-grid">
+            <article class="course-card intern-card">
+              <span class="course-meta">Ex-estagiário(a)</span>
+              <div class="team-member" style="margin-top: 4px;">
+                <span class="team-avatar">NE</span>
+                <div><strong>Nome do ex-estagiário</strong><span>Suporte Técnico</span></div>
+              </div>
+              <p class="intern-meta">Técnico em Informática · Ago 2025 – Jan 2026</p>
+              <p><strong>Projetos:</strong> Atuou no atendimento inicial e no diagnóstico de defeitos durante a fase de estruturação da InovaJK.</p>
+              <p><strong>Habilidades:</strong> Atendimento ao cliente, diagnóstico de hardware</p>
+              <div class="intern-links">
+                <a href="#">Portfólio</a>
+                <a href="#">Contato profissional</a>
+              </div>
+            </article>
+          </div>
+          <p class="team-note">* Perfil de exemplo — substitua ou remova conforme o histórico real de estagiários.</p>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container split-layout">
+          <div>
+            <p class="eyebrow">Papel dos estagiários</p>
+            <h2>Uma ponte entre os professores e os grupos de alunos.</h2>
+          </div>
+          <div>
+            <p>
+              Como nem todos os tempos livres da turma contam com um professor disponível para
+              supervisão, os estagiários ajudam a garantir que os grupos continuem trabalhando
+              com acompanhamento, apoiando o fluxo de atendimento e a organização do
+              Laboratório 4.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> InovaJK — Escola Técnica Estadual Juscelino Kubitschek (FAETEC). Todos os direitos reservados.</p>
+        <div class="footer-links">
+          <a href="empresa.html">Empresa</a>
+          <a href="cursos.html">Áreas de Atuação</a>
+          <a href="estagiarios.html">Estagiários</a>
+          <a href="escola.html">Escola</a>
+          <a href="roadmap.html">Roadmap</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>
