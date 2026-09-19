@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato | InovaJK</title>
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('inovajk-theme');
+          var theme =
+            stored ||
+            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="icon" href="../images/logo-inovajk.png" type="image/png" />
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container header-inner">
+        <a href="../index.html" class="brand" aria-label="Página inicial da InovaJK">
+          <span class="brand-mark"><img src="../images/logo-inovajk.png" alt="Logotipo InovaJK" /></span>
+          <span class="brand-text">
+            <strong>Inova</strong>
+            <small>JK</small>
+          </span>
+        </a>
+
+        <button
+          type="button"
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="navMenu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav" id="navMenu" aria-label="Navegação principal">
+          <a href="../index.html">Home</a>
+          <a href="empresa.html">Empresa</a>
+          <a href="cursos.html">Áreas de Atuação</a>
+          <a href="estagiarios.html">Estagiários</a>
+          <a href="escola.html">Escola</a>
+          <a href="roadmap.html">Roadmap</a>
+          <a href="contato_reg.html">Contato</a>
+        </nav>
+
+        <div class="nav-overlay" id="navOverlay"></div>
+
+        <button
+          type="button"
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Alternar para modo escuro"
+          aria-pressed="false"
+        >
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <line x1="12" y1="2" x2="12" y2="4"></line>
+            <line x1="12" y1="20" x2="12" y2="22"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="2" y1="12" x2="4" y2="12"></line>
+            <line x1="20" y1="12" x2="22" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="page-banner">
+        <div class="container page-intro">
+          <p class="eyebrow">Contato</p>
+          <h1>Fale com a InovaJK.</h1>
+          <p>
+            Entre em contato para solicitar um serviço, tirar dúvidas sobre um atendimento em
+            andamento ou saber mais sobre o projeto da empresa acadêmica da FAETEC JK.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="joinus-box">
+            <div class="joinus-copy">
+              <p class="eyebrow">Quero fazer parte</p>
+              <h2>Quer ser um dos próximos integrantes da InovaJK?</h2>
+              <p>
+                A InovaJK está sempre aberta a novos alunos interessados em aplicar na
+                prática o que aprendem em sala de aula. Antes de se candidatar, confira os
+                requisitos:
+              </p>
+              <ul class="requirements-list">
+                <li>Estar regularmente matriculado(a) no 2º ou 3º ano do curso Técnico em Informática</li>
+                <li>Ter disponibilidade nos horários de tempo livre da turma</li>
+                <li>Ter interesse em pelo menos uma das áreas de atuação da empresa</li>
+                <li>Comprometer-se com a participação nas atividades e no fluxo de atendimento</li>
+              </ul>
+            </div>
+            <a href="#form-contato" class="button button-primary" id="joinUsButton">Quero me candidatar</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-content">
+        <div class="container contact-grid">
+          <aside class="contact-panel">
+            <p class="eyebrow">Fale conosco</p>
+            <h3>Estamos prontos para conversar</h3>
+            <p>Seja para solicitar um serviço, acompanhar uma Ordem de Serviço ou conhecer o projeto.</p>
+            <ul>
+              <li>
+                <strong>Email</strong>
+                <span>contato@inovajk.faetec.rj.gov.br</span>
+              </li>
+              <li>
+                <strong>Telefone</strong>
+                <span>(21) 99090-9330</span>
+              </li>
+              <li>
+                <strong>Endereço</strong>
+                <span>Escola Técnica Estadual Juscelino Kubitschek (FAETEC), Rio de Janeiro</span>
+              </li>
+            </ul>
+          </aside>
+
+          <div class="form-panel" id="form-contato">
+            <p class="eyebrow">Formulário</p>
+            <h3>Solicite informações</h3>
+            <form action="https://formspree.io/f/xrpgjoyq" method="POST">
+              <div class="form-row">
+                <div>
+                  <label for="nome">Nome</label>
+                  <input id="nome" name="nome" type="text" placeholder="Seu nome" required />
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" placeholder="seu@email.com" required />
+                  <span class="field-feedback" id="emailFeedback"></span>
+                </div>
+              </div>
+
+              <div class="form-row" style="margin-top: 16px;">
+                <div>
+                  <label for="assunto">Assunto</label>
+                  <select id="assunto" name="assunto">
+                    <option>Informações gerais</option>
+                    <option>Quero fazer parte</option>
+                    <option>Solicitar orçamento de serviço</option>
+                    <option>Acompanhar Ordem de Serviço</option>
+                    <option>Parceria com a escola</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="telefone">Telefone</label>
+                  <input id="telefone" name="telefone" type="tel" inputmode="numeric" placeholder="(21) 99999-9999" maxlength="15" required />
+                  <span class="field-feedback" id="telefoneFeedback"></span>
+                </div>
+              </div>
+
+              <div class="form-row partnership-fields" id="partnershipFields" style="display: none; margin-top: 16px;">
+                <div>
+                  <label for="empresaNome">Nome da empresa/instituição</label>
+                  <input id="empresaNome" name="empresaNome" type="text" placeholder="Razão social" />
+                </div>
+                <div>
+                  <label for="cnpj">CNPJ</label>
+                  <input id="cnpj" name="cnpj" type="text" inputmode="numeric" placeholder="00.000.000/0000-00" maxlength="18" />
+                  <span class="field-feedback" id="cnpjFeedback"></span>
+                </div>
+              </div>
+
+              <div style="margin-top: 16px;">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..." required></textarea>
+              </div>
+
+              <div id="formFeedback" class="form-feedback" role="alert" aria-live="polite"></div>
+
+              <div class="form-actions">
+                <button type="submit" class="button button-primary" id="submitButton">Enviar mensagem</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> InovaJK — Escola Técnica Estadual Juscelino Kubitschek (FAETEC). Todos os direitos reservados.</p>
+        <div class="footer-links">
+          <a href="empresa.html">Empresa</a>
+          <a href="cursos.html">Áreas de Atuação</a>
+          <a href="estagiarios.html">Estagiários</a>
+          <a href="escola.html">Escola</a>
+          <a href="roadmap.html">Roadmap</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/index.js"></script>
+    <script src="../js/contato.js"></script>
+  </body>
+</html>

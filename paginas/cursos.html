@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Áreas de Atuação | InovaJK</title>
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('inovajk-theme');
+          var theme =
+            stored ||
+            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="icon" href="../images/logo-inovajk.png" type="image/png" />
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container header-inner">
+        <a href="../index.html" class="brand" aria-label="Página inicial da InovaJK">
+          <span class="brand-mark"><img src="../images/logo-inovajk.png" alt="Logotipo InovaJK" /></span>
+          <span class="brand-text">
+            <strong>Inova</strong>
+            <small>JK</small>
+          </span>
+        </a>
+
+        <button
+          type="button"
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="navMenu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav" id="navMenu" aria-label="Navegação principal">
+          <a href="../index.html">Home</a>
+          <a href="empresa.html">Empresa</a>
+          <a href="cursos.html">Áreas de Atuação</a>
+          <a href="estagiarios.html">Estagiários</a>
+          <a href="escola.html">Escola</a>
+          <a href="roadmap.html">Roadmap</a>
+          <a href="contato_reg.html">Contato</a>
+        </nav>
+
+        <div class="nav-overlay" id="navOverlay"></div>
+
+        <button
+          type="button"
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Alternar para modo escuro"
+          aria-pressed="false"
+        >
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <line x1="12" y1="2" x2="12" y2="4"></line>
+            <line x1="12" y1="20" x2="12" y2="22"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="2" y1="12" x2="4" y2="12"></line>
+            <line x1="20" y1="12" x2="22" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="page-banner">
+        <div class="container page-intro">
+          <p class="eyebrow">Áreas de atuação</p>
+          <h1>Cinco grupos, um único fluxo de atendimento.</h1>
+          <p>
+            A InovaJK é organizada em cinco grupos de alunos que atuam de forma integrada,
+            aplicando na prática os conteúdos de Redes, Hardware, Administração e Segurança do
+            curso Técnico em Informática.
+          </p>
+        </div>
+      </section>
+
+      <section class="page-content">
+        <!--
+          Espaço reservado: para adicionar uma nova área/grupo, duplique o
+          <article class="course-card"> abaixo com um novo número de grupo.
+        -->
+        <div class="container course-grid">
+          <article class="course-card">
+            <span class="course-meta">Grupo 1</span>
+            <h3>Organização e Administração</h3>
+            <p>Responsável pela gestão administrativa da InovaJK, controle de registros, documentação e organização geral da empresa acadêmica.</p>
+          </article>
+
+          <article class="course-card">
+            <span class="course-meta">Grupo 2</span>
+            <h3>Suporte Técnico</h3>
+            <p>Simula o atendimento ao cliente e o diagnóstico de defeitos, sendo a porta de entrada e saída de cada Ordem de Serviço.</p>
+          </article>
+
+          <article class="course-card">
+            <span class="course-meta">Grupo 3</span>
+            <h3>Manutenção e Montagem</h3>
+            <p>Executa os serviços de manutenção, montagem e desmontagem de computadores a partir do diagnóstico e orçamento aprovados.</p>
+          </article>
+
+          <article class="course-card">
+            <span class="course-meta">Grupo 4</span>
+            <h3>Infraestrutura e Redes</h3>
+            <p>Cuida da estrutura de rede da InovaJK, incluindo cabeamento, conectividade e suporte aos equipamentos conectados.</p>
+          </article>
+
+          <article class="course-card">
+            <span class="course-meta">Grupo 5</span>
+            <h3>Segurança e Qualidade</h3>
+            <p>Verifica cada serviço antes da entrega, garantindo qualidade e segurança em todo o fluxo de atendimento da InovaJK.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> InovaJK — Escola Técnica Estadual Juscelino Kubitschek (FAETEC). Todos os direitos reservados.</p>
+        <div class="footer-links">
+          <a href="empresa.html">Empresa</a>
+          <a href="cursos.html">Áreas de Atuação</a>
+          <a href="estagiarios.html">Estagiários</a>
+          <a href="escola.html">Escola</a>
+          <a href="roadmap.html">Roadmap</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>
